@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Extra types for graphql-ruby'
   spec.description   = 'Extra types for graphql-ruby: JSON, Date, and BigInt'
-  spec.homepage      = "https://github.com/bitjourney/graphql_json_type"
+  spec.homepage      = "https://github.com/bitjourney/graphql_types-ruby"
   spec.license       = "MIT"
   spec.required_ruby_version = '>= 2.3'
 
