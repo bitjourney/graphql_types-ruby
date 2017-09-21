@@ -7,7 +7,6 @@ require "json"
 require "time"
 
 module GraphqlTypes
-
   # @type [GraphQL::ScalarType]
   JsonType = GraphQL::ScalarType.define do
     name "JSON"

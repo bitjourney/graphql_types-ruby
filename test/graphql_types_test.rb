@@ -23,7 +23,7 @@ class GraphqlTypesTest < Minitest::Test
 
   def test_json_type_coerce_result
     assert do
-      GraphqlTypes::JsonType.coerce_isolated_result({ "foo" => 'bar' }) == '{"foo":"bar"}'
+      GraphqlTypes::JsonType.coerce_isolated_result("foo" => 'bar') == '{"foo":"bar"}'
     end
   end
 
