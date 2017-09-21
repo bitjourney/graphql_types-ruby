@@ -1,5 +1,8 @@
 # GraphqlTypes
 
+[![Build Status](https://travis-ci.org/bitjourney/graphql_types-ruby.svg?branch=master)](https://travis-ci.org/bitjourney/graphql_types-ruby) [![Gem Version](https://badge.fury.io/rb/graphql_types.svg)](https://badge.fury.io/rb/graphql_types)
+
+
 This gem provides scalar types that GraphQL core does not have:
 
 * `GraphqlTypes::JsonType` as `JSON`
