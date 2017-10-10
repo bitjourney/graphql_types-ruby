@@ -5,7 +5,7 @@
 
 This gem provides scalar types that GraphQL core does not have:
 
-* `GraphqlTypes::JsonType` as `JSON`
+* `GraphqlTypes::AnyType` as dynamically-typed objects
 * `GraphqlTypes::DateType` as `Date`
 * `GraphqlTypes::BigIntType` as `BigInt`
 
@@ -35,11 +35,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/graphql_json_type.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bitjourney/graphql_types.
 
 ## Copygirht
 
-Copyright (c) 2017 Bit Journey, Inc.
+Copyright (c) 2017 FUJI goro (@gfx) and Bit Journey, Inc.
 
 ## License
 
