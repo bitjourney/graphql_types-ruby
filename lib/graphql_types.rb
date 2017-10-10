@@ -8,9 +8,18 @@ require "time"
 
 module GraphqlTypes
   # @type [GraphQL::ScalarType]
+  AnyType = GraphQL::ScalarType.define do
+    name "Any"
+    description "A dynamic-typed object"
+
+    coerce_input ->(x, _context) { x }
+    coerce_result ->(x, _context) { x }
+  end
+
+  # @type [GraphQL::ScalarType]
   JsonType = GraphQL::ScalarType.define do
     name "JSON"
-    description "A dynamic object"
+    description "A dynamic-typed object encoded in JSON (deprecated)"
 
     coerce_input ->(x, _context) { JSON.parse(x) }
     coerce_result ->(x, _context) { JSON.dump(x) }
