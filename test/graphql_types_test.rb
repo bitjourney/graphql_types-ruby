@@ -15,6 +15,18 @@ class GraphqlTypesTest < Minitest::Test
     refute_nil ::GraphqlTypes::VERSION
   end
 
+  def test_any_type_coerce_input
+    assert do
+      GraphqlTypes::AnyType.coerce_isolated_input("foo" => "bar") == { "foo" => 'bar' }
+    end
+  end
+
+  def test_any_type_coerce_result
+    assert do
+      GraphqlTypes::AnyType.coerce_isolated_result("foo" => 'bar') == { "foo" => "bar" }
+    end
+  end
+
   def test_json_type_coerce_input
     assert do
       GraphqlTypes::JsonType.coerce_isolated_input('{"foo":"bar"}') == { "foo" => 'bar' }
